@@ -8,12 +8,12 @@ const pathKey = path.resolve('./serviceaccountkey.json')
 
 // TODO: Sesuaikan konfigurasi Storage
 const gcs = new Storage({
-    projectId: 'submission-mgce-kevin-fin',
+    projectId: 'submission-mgce-kevinchris',
     keyFilename: pathKey
 })
 
 // TODO: Tambahkan nama bucket yang digunakan
-const bucketName = 'kevin-fin-bucket'
+const bucketName = 'kevinchris-bucket'
 const bucket = gcs.bucket(bucketName)
 
 function getPublicUrl(filename) {
